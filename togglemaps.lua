@@ -42,3 +42,5 @@ M.toggledmode = function(toggledmappings)
     end
     return toggle
 end
+
+return M
