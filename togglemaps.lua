@@ -14,7 +14,7 @@ end
 
 local mapget = {}
 for _, mode in ipairs({"n", "v", "i", "t"}) do
-    mapget[mode] = partial(mapping_getter, mode)
+    mapget[mode] = util.partial(mapping_getter, mode)
 end
 
 
