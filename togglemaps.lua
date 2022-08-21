@@ -7,7 +7,7 @@ local function mapping_getter(mode)
     mappings = util.filter(function(x) return x.buffer == 0 end, mappings)
     local ret = {}
     for _, v in ipairs(mappings) do
-        mappings[mode.rhs] = v
+        ret[mode.rhs] = v
     end
     return ret
 end
